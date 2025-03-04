@@ -1,43 +1,75 @@
-# Desafios de Programação em Python
 
-Este repositório contém soluções em Python para cinco desafios de programação, abrangendo lógica, matemática, manipulação de dados e strings.
+# Desafio de Programação
 
-## Descrição Detalhada
+Este repositório contém soluções para um conjunto de exercícios de programação em Python. Os exercícios abordam temas como cálculos matemáticos, manipulação de dados e uso de estruturas de dados. 
 
-Este repositório apresenta a resolução de cinco desafios de programação utilizando a linguagem Python. Os desafios abordam diferentes conceitos e técnicas, incluindo:
+## Estrutura do Projeto
 
-1.  **Lógica e Iteração:** Implementação de um algoritmo de soma com estrutura de repetição (`while`).
-2.  **Sequência de Fibonacci:** Cálculo da sequência de Fibonacci e verificação de pertinência de um número à sequência.
-3.  **Análise de Faturamento Diário:** Leitura de dados de faturamento de um arquivo JSON, cálculo de estatísticas (menor, maior e média) e identificação de dias acima da média.
-4.  **Cálculo de Percentual de Faturamento por Estado:** Cálculo da participação percentual de cada estado no faturamento total de uma distribuidora.
-5.  **Inversão de String:** Implementação de um algoritmo para inverter os caracteres de uma string, sem o uso de funções prontas.
+A estrutura do repositório é a seguinte:
 
-## Conteúdo do Repositório
+```
+desafio-programacao/
+│
+├── exercicios/
+│   ├── ex1.py                 # Exercício 1
+│   ├── ex2.py                 # Exercício 2
+│   ├── ex3.py                 # Exercício 3
+│   ├── ex4.py                 # Exercício 4
+│   ├── ex5.py                 # Exercício 5
+│   └── dados.json             # Dados JSON para o Exercício 3
+│
+└── app.py                     # Arquivo para rodar os exercícios
+```
 
-* `ex1.py`: Solução para o desafio 1.
-* `ex2.py`: Solução para o desafio 2.
-* `ex3.py`: Solução para o desafio 3, incluindo o arquivo `dados.json` com os dados de faturamento.
-* `ex4.py`: Solução para o desafio 4.
-* `ex5.py`: Solução para o desafio 5.
-* `README.md`: Documentação do repositório (este arquivo).
+## Como Rodar o Projeto
 
-## Como Executar os Códigos
+1. **Clone o repositório:**
+    ```bash
+    git clone https://github.com/seu-usuario/desafio-programacao.git
+    ```
 
-1.  Clone o repositório para sua máquina local.
-2.  Navegue até o diretório do repositório.
-3.  Execute os scripts Python utilizando o interpretador Python (por exemplo, `python ex1.py`).
-4.  O arquivo `dados.json` precisa estar na mesma pasta que o arquivo `ex3.py` para execução correta.
+2. **Navegue até a pasta do projeto:**
+    ```bash
+    cd desafio-programacao
+    ```
 
-## Observações
+3. **Execute o `app.py`:**
+    ```bash
+    python app.py
+    ```
 
-* Os desafios foram resolvidos utilizando Python 3.
-* O desafio 3 utiliza um arquivo JSON (`dados.json`) como fonte de dados.
-* O desafio 5 implementa a inversão de string sem utilizar funções prontas, como `reverse()`.
+## Descrição dos Exercícios
 
-## Autor
+### Exercício 1
+Dado o trecho de código:
 
-\Yago Brum
+```
+int INDICE = 13, SOMA = 0, K = 0;
+Enquanto K < INDICE faça { K = K + 1; SOMA = SOMA + K; }
+Imprimir(SOMA);
+```
 
-## Licença
+O programa calcula a soma dos números de 1 a 13. O resultado é a soma de todos esses números.
 
-Este projeto está sob a licença \[Tipo de Licença, se aplicável].
+### Exercício 2
+O programa recebe um número e verifica se ele pertence à sequência de Fibonacci. A sequência de Fibonacci é gerada a partir de 0 e 1, e cada número subsequente é a soma dos dois números anteriores.
+
+### Exercício 3
+O exercício lê dados de um arquivo JSON e realiza os seguintes cálculos:
+- Menor valor de faturamento ocorrido em um dia do mês;
+- Maior valor de faturamento ocorrido em um dia do mês;
+- Número de dias no mês em que o valor de faturamento diário foi superior à média mensal.
+
+### Exercício 4
+O programa calcula o percentual de representação de cada estado dentro do valor total de faturamento mensal de uma distribuidora. Os valores de faturamento são fornecidos em um dicionário.
+
+### Exercício 5
+Este exercício inverte os caracteres de uma string fornecida pelo usuário.
+
+## Dependências
+
+Não há dependências externas para esse projeto até o momento.
+
+## Contribuições
+
+Sinta-se à vontade para contribuir com melhorias ou correções! Para isso, basta fazer um fork deste repositório, realizar as modificações desejadas e enviar um pull request.
